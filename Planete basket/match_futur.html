@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade-deadline</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff7b00, #ffae00);
+            color: white;
+            text-align: center;
+        }
+
+        header{
+            background: black;
+            padding:20px;
+        }
+
+
+
+        nav {
+            margin-bottom: 15px;
+        }
+
+        nav a{
+            text-decoration:none;
+            margin:0 10px;
+            padding:10px 20px;
+            background:rgb(0, 0, 0);
+            color:#ff7b00;
+            border-radius:25px;
+            font-weight:bold;
+            transition:0.3s;
+            display:inline-block;
+        }
+
+        nav a:hover{
+            background: #ff7b00;
+            color:rgb(0, 0, 0);
+            transform:scale(1.1);
+        }
+
+        img{
+            width: 100px;
+            margin-top: 10px;
+            border-radius: 35px;
+    
+        }
+
+        h1{
+            font-size:100px;
+            margin-bottom:15px;
+            color: #ff7b00;
+        }
+        
+
+.actus-nba {
+    background: #000;
+    margin: 50px 20px;
+    padding: 50px 30px;
+    border-radius: 40px;
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.actus-nba h2 {
+    color: #ffae00;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 26px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-actu {
+    background: #161616;
+    border-radius: 20px;
+    padding: 25px 22px;
+    color: white;
+    box-shadow: 0 0 12px rgba(255, 140, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-actu:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 18px rgba(255, 140, 0, 0.18);
+}
+
+.card-actu h3 {
+    color: #ffae00;
+    font-size: 18px;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.card-actu p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #f2f2f2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .actus-nba {
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+
+    .actus-nba h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .card-actu {
+        padding: 20px 18px;
+    }
+
+    .card-actu h3 {
+        font-size: 17px;
+    }
+
+    .card-actu p {
+        font-size: 15px;
+    }
+}
+
+.nouvelle-section {
+    background: rgba(0, 0, 0, 0.65);
+    margin: 50px 20px;
+    padding: 40px 30px;
+    border-radius: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.nouvelle-section h2 {
+    color: #ffae00;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.nouvelle-section p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #f2f2f2;
+}
+
+footer{
+    margin-top:40px;
+    padding:15px;
+    background:rgba(0,0,0,0.8);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="logo.png" alt="">PLANÈTE BASKET</h1>
+        <nav>
+            <a href="Acceuil.html">ACCUEIL</a>
+            <a href="reference.html">RÉFÉRENCE</a>
+            <a href="info.html">NEWS</a>
+            <a href="franchise.html">FRANCHISE</a>
+        </nav>
+    </header>
+
+<section class="actus-nba">
+    <h2>🏀 Matchs NBA de ce soir</h2>
+
+    <div class="cards-container">
+
+        <div class="card-actu">
+            <h3>76ers vs Cavaliers</h3>
+            <p class="heure-match"><b>00h00 (heure de Paris)</b></p>
+            <p>Un duel intéressant pour lancer la soirée. Cleveland part avec un léger avantage à domicile, mais Philadelphie peut créer la surprise si le rythme reste élevé.</p>
+        </div>
+
+        <div class="card-actu">
+            <h3>Grizzlies vs Nets</h3>
+            <p class="heure-match"><b>00h30 (heure de Paris)</b></p>
+            <p>Affiche plus ouverte qu’elle n’en a l’air. Memphis voudra imposer son intensité, tandis que Brooklyn cherchera à profiter de son jeu rapide.</p>
+        </div>
+
+        <div class="card-actu">
+            <h3>Nuggets vs Thunder</h3>
+            <p class="heure-match"><b>00h30 (heure de Paris)</b></p>
+            <p>Probablement l’un des plus gros matchs de la nuit. Denver et Oklahoma City ont le talent pour offrir une rencontre très spectaculaire.</p>
+        </div>
+
+        <div class="card-actu">
+            <h3>Warriors vs Jazz</h3>
+            <p class="heure-match"><b>02h00 (heure de Paris)</b></p>
+            <p>Golden State devra bien bouger le ballon face à une équipe du Jazz capable de gêner n’importe qui. Match potentiellement serré jusqu’au bout.</p>
+        </div>
+
+        <div class="card-actu">
+            <h3>Knicks vs Clippers</h3>
+            <p class="heure-match"><b>03h00 (heure de Paris)</b></p>
+            <p>Une opposition entre deux équipes ambitieuses. Les Clippers auront l’avantage du terrain, mais New York peut répondre avec sa dureté défensive.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="nouvelle-section">
+    <h2>📌 À ne pas manquer</h2>
+    <p>Suivez cette page pour avoir les dernières mises à jour de la soirée : pronostics, scores en direct et les meilleurs highlights à venir.</p>
+</section>
+
+<footer>
+© 2026 Planète Basket
+</footer>
+
+</body>
+</html>

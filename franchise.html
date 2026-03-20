@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Franchises - Planète Basket</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff7b00,#ffae00);
+    color:white;
+    text-align:center;
+}
+
+header{
+    background: black;
+    padding:20px;
+}
+
+h1{
+    font-size:100px;
+    margin-bottom:15px;
+    color: #ff7b00;
+}
+
+nav a{
+    text-decoration:none;
+    margin:0 10px;
+    padding:10px 20px;
+    background:rgb(0, 0, 0);
+    color:#ff7b00;
+    border-radius:25px;
+    font-weight:bold;
+    transition:0.3s;
+    display:inline-block;
+}
+
+nav a:hover{
+    background: #ff7b00;
+    color:rgb(0, 0, 0);
+    transform:scale(1.1);
+}
+
+img{
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 35px;
+    
+
+}
+section {
+    margin:40px 20px;
+    background:black;
+    padding:30px;
+    border-radius:50px;
+    text-align: left;
+    
+}
+
+section img{
+    width: 50px;
+    margin-top: auto;
+    border-radius: 35px;
+}
+
+p{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+footer{
+    margin-top:40px;
+    padding:15px;
+    background:rgba(0,0,0,0.8);
+}
+
+/* Style général du site */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Titre */
+h3 {
+    margin-top: 40px;
+    font-size: 28px;
+    color: orange;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Tableau */
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 900px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* En-tête */
+thead {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px;
+}
+
+/* Bordures */
+th, td {
+    border-bottom: 1px solid #333;
+}
+
+/* Effet au survol */
+tbody tr:hover {
+    background-color: #292929;
+    transition: 0.3s;
+}
+
+/* Responsive (mobile) */
+@media screen and (max-width: 768px) {
+    table {
+        width: 95%;
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1><img src="logo.png" alt="logo"> FRANCHISES NBA</h1>
+
+<nav>
+<a href="index.html">ACCUEIL</a>
+<a href="reference.html">RÉFÉRENCE</a>
+<a href="info.html">NEWS</a>
+<a href="franchise.html">FRANCHISE</a>
+</nav>
+</header>
+
+<section>
+    <h3>Conférences NBA</h3>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Conférence EST</th>
+                <th>Conférence OUEST</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Detroit Pistons <img src="logo piston.png" alt=""></td>
+                <td>Oklahoma City Thunder <img src="https://1000logos.net/wp-content/uploads/2018/06/Oklahoma-City-Thunder-Logo.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>Boston Celtics <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/langfr-250px-Celtics_de_Boston_logo.svg.png" alt=""></td>
+                <td>San Antonio Spurs <img src="https://e7.pngegg.com/pngimages/310/973/png-clipart-san-antonio-spurs-nba-san-antonio-rampage-cleveland-cavaliers-san-antonio-stars-san-antonio-spurs-angle-hand.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>New York Knicks <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/a/a3/Logo_Knicks_New_York_-_2011.svg/langfr-250px-Logo_Knicks_New_York_-_2011.svg.png" alt=""></td>
+                <td>Houston Rockets <img src="data:image/png;base64,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" alt=""></td>
+            </tr>
+            <tr>
+                <td>Cleveland Cavaliers <img src="https://m.media-amazon.com/images/I/51wePoJ8zZL.jpg" alt=""></td>
+                <td>Denver Nuggets <img src="https://upload.wikimedia.org/wikipedia/fr/3/35/Nuggets_de_Denver_2018.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>Toronto Raptors <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/7/72/Raptors_de_Toronto.png/250px-Raptors_de_Toronto.png" alt=""></td>
+                <td>Minnesota Timberwolves <img src="https://trashtalk.co/_next/image/?url=https%3A%2F%2Fredac.trashtalk.co%2Fwp-content%2Fuploads%2F2022%2F12%2FMinnesota-Timberwolves.png&w=3840&q=75" alt=""></td>
+            </tr>
+            <tr>
+                <td>Philadelphia 76ers <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/7/71/Philadelphia_75ers_2015.svg/langfr-250px-Philadelphia_75ers_2015.svg.png" alt=""></td>
+                <td>Los Angeles Lakers <img src="https://static.vecteezy.com/ti/vecteur-libre/p1/15863698-logo-des-lakers-de-los-angeles-sur-fond-transparent-gratuit-vectoriel.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>Orlando Magic <img src="https://play-lh.googleusercontent.com/l0x0iyAZhyYu07WQON9RfKdQ3qnAa5sBr0lPBQH5vMYl_zJDiAYWZlq_6XG-Q0dOuLmJJBxyl-JwmkX2iCw4nA" alt=""></td>
+                <td>Phoenix Suns <img src="https://dejpknyizje2n.cloudfront.net/media/carstickers/versions/phoenix-suns-nba-logo-sticker-ucddc-a48d-x418.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>Miami Heat <img src="https://www.sticarz.fr/wp-content/uploads/2021/05/Miami-Heat.jpg" alt=""></td>
+                <td>Golden State Warriors <img src="https://cdn.freebiesupply.com/images/large/2x/golden-state-warriors-logo-transparent.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>Atlanta Hawks <img src="https://www.sticker-basket.com/cdn/shop/files/sticker-de-decoration-basket-nba-autocollant-logo-atlanta-hawks-309_1024x1024.webp?v=1694249252" alt=""></td>
+                <td>Portland Trail Blazers <img src="https://www.sticker-basket.com/cdn/shop/files/sticker-logo-decoratif-nba-portland-blazers-autocollant-121_1024x1024.webp?v=1694247474" alt=""></td>
+            </tr>
+            <tr>
+                <td>Charlotte Hornets <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/f/f3/Hornets_de_Charlotte_logo.svg/langfr-250px-Hornets_de_Charlotte_logo.svg.png" alt=""></td>
+                <td>Los Angeles Clippers <img src="https://trashtalk.co/_next/image/?url=https%3A%2F%2Fredac.trashtalk.co%2Fwp-content%2Fuploads%2F2022%2F12%2FLAClippers_Global.png&w=3840&q=75" alt=""></td>
+            </tr>
+            <tr>
+                <td>Milwaukee Bucks <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/1/15/Milwaukee_Bucks_2015.svg/langfr-250px-Milwaukee_Bucks_2015.svg.png" alt=""></td>
+                <td>Memphis Grizzlies <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0UQVW14w2JcLOlb0CpAxxAUXEXsCyfuvXA&s" alt=""></td>
+            </tr>
+            <tr>
+                <td>Chicago Bulls <img src="https://preview.redd.it/is-it-surprising-to-you-that-the-bulls-logo-has-stood-the-v0-yb42h26bfrfe1.png?auto=webp&s=26d90939a5574f7ecf3fc9d766a5c01a868ac074" alt=""></td>
+                <td>Dallas Mavericks <img src="https://www.sticker-basket.com/cdn/shop/files/adhesif-pour-fan-nba-sticker-autocollant-logo-dallas-maverics-757_1024x1024.webp?v=1694248744" alt=""></td>
+            </tr>
+            <tr>
+                <td>Washington Wizards <img src="https://www.basketusa.com/app/uploads/2015/04/CCo1fgvUMAEqEAg.jpg" alt=""></td>
+                <td>Utah Jazz <img src="https://seatgeekimages.com/performers-landscape/utah-jazz-1a98fe/2107/64620/450x450.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>Brooklyn Nets <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Brooklyn_Nets_logo_primario_2024.png" alt=""></td>
+                <td>New Orleans Pelicans <img src="https://www.webstickersmuraux.com/fr/img/nba054-jpg/folder/products-listado-merchanthover/autocollants-nba---new-orleans-pelicans-bouclier.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>Indiana Pacers <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/3/33/Pacers_de_l%27Indiana_2017.svg/langfr-250px-Pacers_de_l%27Indiana_2017.svg.png" alt=""></td>
+                <td>Sacramento Kings <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/95/Kings_de_Sacramento_logo.svg/langfr-250px-Kings_de_Sacramento_logo.svg.png" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer>
+© 2026 Planète Basket
+</footer>
+
+</body>
+</html>
